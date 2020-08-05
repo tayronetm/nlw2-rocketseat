@@ -40,9 +40,7 @@ export default class ClassController {
 		.join('users', 'classes.user_id', '=', 'users.id')
 		.select(['classes.*', 'users.*']);
 
-		// return response.json(classes);
-		console.log(classes);
-		response.send();
+		return response.json(classes);
 
 	}
 
