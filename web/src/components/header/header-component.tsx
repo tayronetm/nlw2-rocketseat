@@ -20,6 +20,10 @@ const Header: React.FC<PageHeaderProps> = (props) => {
 
 		<div className="header-content">
 			<strong>{props.title}</strong>
+			{/* Primeira forma */}
+			{/* { props.description ? <p>{props.description}</p> : null} */}
+			{/* Segunda forma */}
+			{ props.description && <p>{props.description}</p>}
 			{props.children}
 		</div>
 		</header>
